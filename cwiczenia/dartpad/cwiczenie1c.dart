@@ -60,7 +60,7 @@ void main() {
   // w inne miejsce.
   wydrukujWynik(pomnozDwieLiczby(7, 15));
 
-  // pętla for (...; ...; ...;){...} składa się z czterech elementów. Trzy elementy sterujące pętlą
+  // pętla for (...; ...; ...){...} składa się z czterech elementów. Trzy elementy sterujące pętlą
   // i czwarty, który opisuje co ma się w pętli wykonać - ciało pętli.
   // 1) w pierwszym deklaruje się użycie licznika, który będzie sterował działaniem
   //    pętli. W naszym przykładzie użyliśmy nowej zmiennej o nazwie licznik typu int,
