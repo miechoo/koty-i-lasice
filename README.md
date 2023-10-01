@@ -1,5 +1,5 @@
 # Programujące koty i hakujące łasice
-To projekt edukacyjny dla aspirujących młodych programistów chcących poznać tajniki sztuki programowania.
+To szkoleniowy projekt edukacyjny dla przyszłych najlepszych programistów, czyli aspirujących młodych programistów, chcących poznać tajniki sztuki programowania.
 
 |nr|krótki opis|link do kodu|link do kodu z komentarzami|
 |-|-|-|-|
