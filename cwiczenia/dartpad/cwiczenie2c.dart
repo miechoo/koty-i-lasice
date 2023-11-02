@@ -50,8 +50,8 @@ class Kot {
     _przedstawSieImieniem();
   }
 
-  // Procedura ta jest prywatną procedurą klasy Kot. Wyświetla napis.
-  // Prywatna procedura może być użyta tylko z wewnątrz samej klasy.
+  // Procedura ta jest prywatną metodą klasy Kot. Wyświetla napis.
+  // Prywatna metoda może być użyta tylko z wewnątrz samej klasy.
   // Na przykład z innej metody (procedury lub funkcji).
   // Nie można na przykład wykonać kot3._przedstawSieOgolnie(), bo
   // jest to próba użycia prywatnej metody z zewnątrz klasy, ale
