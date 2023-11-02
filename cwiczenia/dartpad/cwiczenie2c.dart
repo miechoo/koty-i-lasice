@@ -17,30 +17,42 @@ void main() {
   kot3.przedstawSie();
 }
 
-// Klasa Kot ogólnie opisuje, z czego kot się składa i co robi
+// Klasa Kot ogólnie opisuje z czego kot się składa i co robi.
+// Każda klasa składa się z atrybutów i metod.
+// Atrybuty klasy służą do przechowywania jakichś wartości, a
+// metody klasy pozwalają wykonywać jakieś operacje.
+// Metody to są takie funkcje i procedury, które są napisane wewnątrz klasy.
+// Funkcje zwracają wartość.
+// Procedury nie zwracają wartości.
+// Atrybuty są to zmienne lub stałe, które są napisane wewnątrz klasy.
 class Kot {
   // Kot składa się z imienia
   String imie = '';
 
   // Imię kotu jest nadawane tutaj - to specjana funkcja, konstruktor.
   // Funkcja ta ma taką samą nazwę jak nazwa klasy.
-  // Konstruktor przyjmuje jeden parametr - inicjalne imię kota. Na przykład Kot('Futrzak').
+  // Konstruktor przyjmuje w naszym przypadku jeden parametr - imię kota.
+  // Na przykład ```Kot kot3 = Kot('Futrzak');```
   Kot(String inicjalneImie) {
     imie = inicjalneImie;
   }
 
   // Procedura ta jest publiczną metodą klasy Kot.
-  // Wyświetla napis i wykonuje kolejną procedurę _przedstawSieOgolnie()
+  // Wyświetla napis i wykonuje kolejną procedurę _przedstawSieImieniem()
   void przedstawSie() {
-    print('Mrrrrrr.... jestem $imie');
-    _przedstawSieOgolnie();
+    print('Mrrrrrr.... jestem kocurem');
+    _przedstawSieImieniem();
   }
 
   // Procedura ta jest prywatną procedurą klasy Kot. Wyświetla napis.
-  // Prywatna procedura może być użyta tylko z innej procedury (metody).
-  // Nie można na przykład wykonać kot3._przedstawSieOgolnie().
+  // Prywatna procedura może być użyta tylko z wewnątrz samej klasy.
+  // Na przykład z innej metody (procedury lub funkcji).
+  // Nie można na przykład wykonać kot3._przedstawSieOgolnie(), bo
+  // jest to próba użycia prywatnej metody z zewnątrz klasy, ale
+  // da się z metody ```przedstawSie(){ ``` wykonać ```_przedstawSieImieniem(); }``` , bo
+  // jest to użycie prywatnej metody wewnątrz klasy Kot.
   // W języku Dart, żeby metoda była prywatna, musi zaczynać się od znaku podkreślenia _
-  void _przedstawSieOgolnie() {
-    print('Mrrrrrr.... jestem kocurem');
+  void _przedstawSieImieniem() {
+    print('Mrrrrrr.... jestem $imie');
   }
 }

@@ -17,11 +17,11 @@ class Kot {
   }
 
   void przedstawSie() {
-    print('Mrrrrrr.... jestem $imie');
-    _przedstawSieOgolnie();
+    print('Mrrrrrr.... jestem kocurem');
+    _przedstawSieImieniem();
   }
 
-  void _przedstawSieOgolnie() {
-    print('Mrrrrrr.... jestem kocurem');
+  void _przedstawSieImieniem() {
+    print('Mrrrrrr.... jestem $imie');
   }
 }
