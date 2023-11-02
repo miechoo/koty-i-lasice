@@ -18,6 +18,8 @@ void main() {
 }
 
 // Klasa Kot ogólnie opisuje z czego kot się składa i co robi.
+// Nasze koty będą składały się z imienia i będą potrafiły się przedstawić.
+//
 // Każda klasa składa się z atrybutów i metod.
 // Atrybuty klasy służą do przechowywania jakichś wartości, a
 // metody klasy pozwalają wykonywać jakieś operacje.
@@ -29,12 +31,13 @@ class Kot {
   // Kot składa się z imienia
   String imie = '';
 
-  // Imię kotu jest nadawane tutaj - to specjana metoda, tak zwany konstruktor.
-  // Metoda ta wygląda jakby miała taką samą nazwę, jak nazwa klasy,
-  // ale tak naprawdę, to ona nie ma nazwy, a słowo Kot
-  // w napisie Kot(String inicjalneImie) oznacza zwracany typ. Nasz konstruktor zwraca nowego Kota.
-  // Funkcje, które nie mają nazwy, ogólnie nazywają się funkcjami lambda.
-  // Konstruktor przyjmuje w naszym przypadku jeden parametr - imię kota.
+  // Imię kotu nadawane jest tutaj. To specjana metoda, tak zwany konstruktor, która zawsze jest wykonywana jako pierwsza.
+  // Metoda ta wygląda jakby miała taką samą nazwę, jak nazwa klasy, ale
+  // tak naprawdę, to ona nie ma nazwy, a słowo Kot w napisie Kot(String inicjalneImie)
+  // oznacza zwracany typ. Nasz konstruktor zwraca nowego Kota.
+  // Funkcje, które nie mają nazwy ogólnie nazywają się funkcjami lambda.
+  // TypZwracany tuJestMiejsceNaNazweFunkcji (TutajPodajeSieTypParametruFunkcji nazwaParametruFunkcji, InnyTypParametruFunkcji inny, JakisTypParametru parametr) {ciało funkcji;}
+  // Konstruktor przyjmuje w naszym przypadku jeden parametr - inicjalne imię kota.
   // Na przykład ```Kot kot3 = Kot('Futrzak');```
   Kot(String inicjalneImie) {
     imie = inicjalneImie;
