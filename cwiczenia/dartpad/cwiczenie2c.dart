@@ -29,8 +29,11 @@ class Kot {
   // Kot składa się z imienia
   String imie = '';
 
-  // Imię kotu jest nadawane tutaj - to specjana funkcja, konstruktor.
-  // Funkcja ta ma taką samą nazwę jak nazwa klasy.
+  // Imię kotu jest nadawane tutaj - to specjana metoda, tak zwany konstruktor.
+  // Metoda ta wygląda jakby miała taką samą nazwę, jak nazwa klasy,
+  // ale tak naprawdę, to ona nie ma nazwy, a słowo Kot
+  // w napisie Kot(String inicjalneImie) oznacza zwracany typ. Nasz konstruktor zwraca nowego Kota.
+  // Funkcje, które nie mają nazwy, ogólnie nazywają się funkcjami lambda.
   // Konstruktor przyjmuje w naszym przypadku jeden parametr - imię kota.
   // Na przykład ```Kot kot3 = Kot('Futrzak');```
   Kot(String inicjalneImie) {
