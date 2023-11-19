@@ -3,6 +3,13 @@
 // niestety nie da sie jej uruchomić na stronie dartpad.dev, bo ta strona
 // nie obsługuje wprowadzania danych do gry w trakcie gry
 
+// do komunikacji z programem użyłem biblioteki dart:io, której nie ma na stronie dartpad.dev
+// dart:io posiada obiekt stdin, który służy do czytania danych
+// dart:io posiada obiekt stdout, który służy do pisania danych (podobnie jak print())
+
+// do wylosowania liczby użyłem biblioteki dart:math
+// dart:math posiada funckję losującą Random().nextInt()
+
 import 'dart:math';
 import 'dart:io';
 
@@ -14,11 +21,13 @@ void main(List<String> arguments) {
 class Gra {
   static const int _ilePartii = 3;
   int _wynikGry = 0;
+
   void uruchomGre() {
     for (int i = 0; i < _ilePartii; i++) {
       Partia aktualnaPartia = Partia();
       _wynikGry += aktualnaPartia.uruchomPartie();
     }
+
     print('Ukończyłeś grę z wynikiem $_wynikGry. Gratulacje!');
     print('Naciśnij dowolny klawisz żeby zakończyć.');
     stdin.readByteSync();
