@@ -25,7 +25,7 @@ class Gra {
   void uruchomGre() {
     for (int i = 0; i < _ilePartii; i++) {
       Partia aktualnaPartia = Partia();
-      _wynikGry += aktualnaPartia.uruchomPartie();
+      _wynikGry += aktualnaPartia.uruchomPartieIZwrocWynik();
     }
 
     print('Ukończyłeś grę z wynikiem $_wynikGry. Gratulacje!');
@@ -39,7 +39,7 @@ class Partia {
   int _liczbaProb = 1;
   bool _czyZgadl = false;
 
-  int uruchomPartie() {
+  int uruchomPartieIZwrocWynik() {
     print('------nowa partia----------');
 
     _tajemniczaLiczba = Random().nextInt(10);
